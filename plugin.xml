@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="nl.x-services.plugins.socialsharing"
-        version="4.3.19">
+        version="4.3.20">
 
   <name>SocialSharing</name>
 
@@ -17,9 +17,9 @@
 
   <keywords>Social, Share, Twitter, Facebook, Email, SMS, WhatsApp, Tumblr, Pocket, LinkedIN</keywords>
 
-  <repo>https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git</repo>
+  <repo>https://github.com/niou-ns/SocialSharing-PhoneGap-Plugin.git</repo>
 
-  <issue>https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/issues</issue>
+  <issue>https://github.com/niou-ns/SocialSharing-PhoneGap-Plugin/issues</issue>
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
@@ -72,7 +72,7 @@
 
     <source-file src="src/wp8/SocialSharing.cs" />
   </platform>
-  
+
   <!-- windows -->
   <platform name="windows">
     <js-module src="src/windows/SocialSharingProxy.js" name="SocialSharingProxy">
