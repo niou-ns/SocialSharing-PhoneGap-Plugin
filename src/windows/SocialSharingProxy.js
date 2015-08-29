@@ -4,7 +4,7 @@ module.exports = {
     share: function (win, fail, args) {
         //Text Message
         var message = args[0];
-        //Title 
+        //Title
         var subject = args[1];
         //File(s) Path
         var fileOrFileArray = args[2];
@@ -59,7 +59,7 @@ module.exports = {
     shareViaEmail: function (win, fail, args) {
         //Text Message
         var message = args[0];
-        //Title 
+        //Title
         var subject = args[1];
         //File(s) Path
         var fileOrFileArray = args[5];

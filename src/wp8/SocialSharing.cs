@@ -14,6 +14,24 @@ namespace Cordova.Extension.Commands
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK));
         }
 
+        public void shareVia(string jsonArgs)
+        {
+          var options = JsonHelper.Deserialize<string[]>(jsonArgs);
+          var type = options[0];
+          var message = options[1];
+          var title = options[2];
+          var image = options[3];
+
+          if (!"null".Equals(image) && "image".Equals(type))
+          {
+            ShareMediaTask shareMediaTask = new ShareMediaTask();
+            shareMediaTask.FilePath = image;
+            shareMediaTask.Show();
+          }
+
+          DispatchCommandResult(new PluginResult(PluginResult.Status.OK));
+        }
+
         public void share(string jsonArgs)
         {
 
